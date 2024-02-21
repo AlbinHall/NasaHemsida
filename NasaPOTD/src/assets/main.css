@@ -7,6 +7,11 @@
   font-weight: normal;
 }
 
+.space-pic{
+  height: 200px;
+  object-fit: cover;
+}
+
 a,
 .green {
   text-decoration: none;

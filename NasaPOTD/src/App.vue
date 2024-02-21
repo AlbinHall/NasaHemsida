@@ -25,6 +25,6 @@ export default{
 <template>
   <h1>{{ this.title }}</h1>
   <p>{{ this.description }}</p>
-  <img :src="this.picture">
+  <img :src="this.picture" class="img-fluid">
   <LoadPrevWeek/>
 </template>
