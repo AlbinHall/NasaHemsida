@@ -12,6 +12,7 @@ onMounted(async () => {
   endDate.value.setDate(endDate.value.getDate() - 1);
   const result = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=HkCDh9mKfRedC5ZVCxbhmsiqWsr2UtFtUhahnuSO&start_date=${prevDate.value.toISOString().slice(0, 10)}&end_date=${endDate.value.toISOString().slice(0, 10)}`);
   pictures.value = result.data
+  console.log(pictures)
 });
 
 </script>
@@ -22,6 +23,8 @@ onMounted(async () => {
       <div class="card" style="width: 18rem;">
         <img :src="picture.hdurl" class="card-img-top space-pic">
         <div class="card-body">
+          <p class="picture-title"><strong>Title:</strong> {{ picture.title }}</p>
+          <p class="picture-date"><strong>Date:</strong> {{ picture.date }}</p>
           <div data-bs-theme="dark" class="dropdown-center">
             <button class="btn btn-secondary  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               More info
