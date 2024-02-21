@@ -21,7 +21,7 @@ onMounted(async () => {
   <div class="prev-pic-div">
     <div v-for="picture in pictures" class="prev-pic">
       <div class="card" style="width: 18rem;">
-        <img :src="picture.hdurl" class="card-img-top space-pic">
+        <a :href="picture.hdurl" target="_blank"><img :src="picture.hdurl" class="card-img-top space-pic"></a>
         <div class="card-body">
           <p class="picture-title"><strong>Title:</strong> {{ picture.title }}</p>
           <p class="picture-date"><strong>Date:</strong> {{ picture.date }}</p>
