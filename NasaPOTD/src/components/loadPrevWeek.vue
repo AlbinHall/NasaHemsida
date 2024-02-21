@@ -17,12 +17,12 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div v-for="picture in pictures" class="col">
+  <div class="prev-pic-div">
+    <div v-for="picture in pictures" class="prev-pic">
       <div class="card" style="width: 18rem;">
         <img :src="picture.hdurl" class="card-img-top space-pic">
         <div class="card-body">
-          <div data-bs-theme="dark" class="dropdown">
+          <div data-bs-theme="dark" class="dropdown-center">
             <button class="btn btn-secondary  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               More info
             </button>

@@ -12,6 +12,26 @@
   object-fit: cover;
 }
 
+.prev-pic-div{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  justify-items: center;
+}
+
+.prev-pic:last-child{
+  grid-area: 3 / 2;
+}
+
+.dropdown-center{
+  text-align: center;
+}
+.dropdown-menu{
+  --bs-dropdown-min-width: 40rem;
+}
+.card{
+  background-color: #474747;
+}
+
 a,
 .green {
   text-decoration: none;
